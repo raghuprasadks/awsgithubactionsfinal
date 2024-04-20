@@ -20,7 +20,7 @@ jobs:
         username: ${{ secrets.EC2_USERNAME }}
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          cd /home/ubuntu
+          cd /home/ubuntu/app
           git pull
           pip install -r requirements.txt
           flask runs
